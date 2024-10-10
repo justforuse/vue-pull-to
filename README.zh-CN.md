@@ -9,9 +9,9 @@
 [![npm](https://img.shields.io/npm/v/vue-pull-to.svg)](https://www.npmjs.com/package/vue-pull-to)
 
 ## 在线示例
-<img src="http://ot6wx4ryg.bkt.clouddn.com/vuepullto_qrcode.png" style="display: block;" alt="qrcode">
+<img src="https://github.com/user-attachments/assets/7a4f987d-1c7b-47ff-8c9c-430db2890974" style="display: block; width: 120px;" alt="qrcode">
 
-[examples](http://www.vuepullto.top)
+[Online demo](https://vue-pull-to.vercel.app/)
 
 ## 安装
 ``` sh
@@ -27,13 +27,13 @@
         <li>{{ item }}</li>
       </ul>
     </pull-to>
-  </div> 
+  </div>
 </template>
 
 <script>
   import PullTo from 'vue-pull-to'
   import { fetchDataList } from 'api'
-  
+
   export default {
     name: 'example',
     components: {
@@ -59,12 +59,12 @@
 组件会默认占据父元素的百分之百高度。props `top-load-method`和`bottom-load-method`会默认传进一个`loaded`参数，该参数是一个改变组件加载状态的函数，必须调用一次`loaded`不然组件就会一直处于加载状态，如果执行`loaded('done')`组件内部状态就会变成成功加载的状态，`loaded('fail')`为失败。
 
 [更多使用示例请参考Examples的代码](https://github.com/stackjie/vue-pull-to/tree/master/examples)
- 
+
  ## API文档
- 
+
  ### props
 | 属性 | 说明 | 类型 | 默认值 |
-| --- | --- | --- | --- | 
+| --- | --- | --- | --- |
 | distance-index | 滑动的阀值（值越大滑动的速度越慢） | Number | 2 |
 | top-block-height | 顶部在滚动容器外的块级元素区域高度 | Number | 50 |
 | bottom-block-height | 底部在滚动容器外的块级元素区域高度 | Number | 50 |
